@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+
+<body>
+    <h1>Find your fun.</h1>
+
+    <p>What do you want to do? </p>
+
+
+    <form id="fun_form">
+        <label for="find">Find your fun</label>
+        <input type="radio" id="find" name="fun" value="find">
+        <label for="post">Post your fun</label>
+        <input type="radio" id="post" name="fun" value="post"><br>
+        <input type="submit">
+    </form>
+
+    <script>
+        const form = document.getElementById("fun_form");
+        form.addEventListener("submit", submit);
+
+        function submit(event) {
+            event.preventDefault();
+            const itemSelected = form.querySelector('input[name="fun"]:checked').value;
+
+            if (itemSelected === "find") {
+                window.location.href = "findYourFun.html";
+
+            } else {
+                window.location.href = "postYourFun.html";
+
+            }
+        };
+    </script>
+</body>
+
+</html>

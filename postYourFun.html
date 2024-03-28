@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post your fun</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    </head>
+
+    <body>
+    <h1>Find your fun</h1>
+    <h2>Post your fun</h2>
+    <form method="post" action="postYourFun.php">
+        <label for="activity">Type of fun </label><br>
+        <input type="text" id="actvty type" name="actvty type" required>*<br>
+        <label for="city">City </label><br>
+        <input type="text" id="city post" name="city post" required>*<br>
+        <label for="price">Price</label><br>
+        <input type="text" id="price" name="price"><br>
+        <label for="image upload">Upload image *</label>
+        <input type="file" id="imageFile" name="filename" required><br>
+  <input type="submit"><br>
+        <label for="activity description">Describe your fun*</label><br>
+        <textarea name="description" rows="18" cols="40"></textarea><br>
+        <input type="submit">
+    </form>
+
+    <a href="javascript:history.go(-1)">Back</a>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign/login </title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Sign up</h1>
+    <p>Already a member?</p>
+    <button onclick="window.location.href='login.html'">Log in</button>
+    <p>Basic information</p>
+    <p>* Required</p>
+    <form>
+        <label for="fname">First name </label><br>
+        <input type="text" id="fname" name="fname" required>*<br>
+        <label for="lname">Last name </label><br>
+        <input type="text" id="lname" name="lname" required>*<br>
+        <label for="email">E-mail (this will be your username)</label><br>
+        <input type="email" id="email" name="email" required>*<br>
+        <label for="password">Password </label><br>
+        <input type="password" id="password" name="password" required>*
+    </form>
+
+    <p>Billing information</p>
+    <p>Billing address</p>
+    <form>
+        <label for="strt_addr">Street address</label><br>
+        <input type="text" id="strt_addr" name="strt_addr" required>*<br>
+        <label for="city">City</label><br>
+        <input type="text" id="city" name="city" required>*<br>
+        <label for="province">Province</label><br>
+        <select id="province" name="province" required>*
+            <option value="">Select a province</option>
+            <option value="eastern cape">Eastern cape</option>
+            <option value="free state">Free state</option>
+            <option value="gauteng">Gauteng</option>
+            <option value="kwazulu natal">Kwazulu natal</option>
+            <option value="limpopo">Limpopo</option>
+            <option value="mpumalanga">Mpumalanga</option>
+            <option value="northern cape">Northern cape</option>
+            <option value="north west">North west</option>
+            <option value="western cape">Western cape</option>
+        </select>
+        <label for="pstal_code">Postal code</label>
+        <input type="text" id="pstal_code" name="pstal_code" required>*<br>
+        <label for="card_number">Debit/Credit card number</label><br>
+        <input type="text" id="card_number" name="card_number" required>*<br>
+        <label for="exp_date">Expiration date</label><br>
+        <input type="text" id="exp_date" name="exp_date" placeholder="MM/YY"><br>
+        <label for="cvv">CVV*</label><br>
+        <input type="text" id="cvv" name="cvv" required><br>
+        <label for="cardholder name">cardholder name</label><br>
+        <input type="text" id="crdhlder name" name="crdhlder name"><br>
+        <input type="submit">
+    </form>
+    <a href="javascript:history.go(-1)">Back</a>
+</body>
+
+</html>
